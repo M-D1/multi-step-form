@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title></title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!-- GOOGLE FONTS -->
+ <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="index.css" />
+</head>
+<script defer src="index.js" ></script>
+<body>
+ <main>
+  
+  <div class="first-section ">
+   <span  class="active">1</span>
+   <span>2</span>
+   <span>3</span>
+   <span>4</span>
+  </div>
+
+  <form id="form">
+          
+     <div class="container">
+          <!-- PAGE 1 -->
+          <div class="page1">
+               <h1 class="title">Personal info</h1>
+               <p class="desc">Please provide your name, email address, and phone number.</p>
+         
+               <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="e.g. Stephen King" />
+                    <div class="error"></div>
+               </div>
+
+               <div class="input-container">
+                    <label for="name">Email</label>
+                    <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" />
+                    <div class="error"></div>
+               </div>
+
+               <div class="input-container">
+                    <label for="name">Number</label>
+                    <input type="number" id="number" placeholder="e.g. +1 234 567 890 " />
+                    <div class="error"></div>
+               </div>
+               <div class="btn-container">
+                    <button type="submit" class="page1-btn btn">Next</button>
+               </div>
+          </div>
+          <!-- PAGE 2 -->
+          <div class="page2">
+              <h1 class="title">Select your plan</h1>
+              <p class="desc">You have the option of monthly or yearly billing.</p> 
+
+              <div class="plan-flex" id="arcade">
+                    <div>
+                         <img src="images/Arcade.png"  alt="arcade"/>
+                    </div>
+                    <div>
+                         <h3 class="plan-h3">Arcade</h3>
+                         <p class="p1">$9/mo</p>
+                    </div>
+              </div>
+
+               <div class="plan-flex" id="advanced">
+                    <div>
+                         <img src="images/advanced.png" alt="advanced" />
+                    </div>
+                    <div>
+                         <h3 class="plan-h3">Advanced</h3>
+                         <p class="p2">$12/mo</p>
+                    </div>
+               </div>
+
+               <div class="plan-flex" id="pro">
+                    <div>
+                         <img src="images/Pro.png" alt="pro" />
+                    </div>
+                    <div>
+                         <h3 class="plan-h3">Pro</h3>
+                         <p class="p3">$15/mo</p>
+                    </div>
+               </div>
+
+               <div class="mo-yr">
+                    <p id="monthly" class="denim">Monthly</p>
+                    <div class="span-container">
+                         <span class="span" id="span"></span>
+                    </div>
+                    <p id="yearly">Yearly</p>
+               </div>
+
+               <div class="btn-container">
+                    <button id="go-back">Go Back</button>
+                    <button type="button" class="page2-btn btn">Next</button>
+               </div>
+          </div>
+
+          <!-- Page3 -->
+          <div class="page3">
+               <h1 class="title">Pick add-ons</h1>
+               <p class="desc">Add-ons help enhance your gaming experience.</p>
+               
+               
+               <label for="service" class="add-ons-flex">
+                    <input type="checkbox" name="" id="service">
+                    <div class="checkmark-box"></div>
+                    <div>
+                         <h4 class="title">Online service</h4>
+                         <p class="desc">Access to multiplayer games</p>
+                    </div>
+               
+                    <p class="p-price p4 ">+$1/mo</p>
+               </label>
+               
+               <label for="storage" class="add-ons-flex">
+                    <input type="checkbox" name="" id="storage">
+                    <div class="checkmark-box"></div>
+                    <div>
+                         <h4 class="title">Larger storage</h4>
+                         <p class="desc">Extra 1TB of cloud save</p>
+                    </div>
+               
+                    <p class="p-price p5">+2/mo</p>
+               </label>
+               
+               <label for="custom" class="add-ons-flex">
+                    <input type="checkbox" name="" id="custom">
+                    <div class="checkmark-box"></div>
+                    <div>
+                         <h4 class="title">Customizable profile</h4>
+                         <p class="desc">Custom theme on your profile</p>
+                    </div>
+               
+                    <p class="p-price p6 ">+$2/mo</p>
+               </label>
+               <div class="btn-container">
+                    <button id="go-back">Go Back</button>
+                    <button type="submit" class="page3-btn btn">Next</button>
+               </div>
+          </div>
+     </div>
+  </form>
+  
+
+   
+
+  
+  
+
+  
+  
+ </main>
+</body>
+</html>
+
+<!--   <div>
+     <div id="error"></div>
+     <label for="name">Name</label>
+     <input id="name" type="text" placeholder="e.g. Stephen King"required  />
+    </div>
+    <div>
+     <div id="error"></div>
+     <label for="email">Email</label>
+     <input id="email" type="email" placeholder="e.g. stephenking@lorem.com"required  />
+    </div>
+    <div>
+     <div id="error"></div>
+     <label for="number">Phone Number</label>
+     <input id="number" type="number"  placeholder="e.g. +1 234 567 890"  required  />
+    </div> -->
